@@ -1,80 +1,166 @@
 body{
     margin: 0px;
     padding: 0px;
+    --color-rouge:  rgb(190, 16, 16)  
+
 }
-/* nav bar */
+.flux{
+ padding: 0;
+ margin: 0;
+}
+/* .container-fluid{
+    padding: 0px;
+} */
+
+/* fontes */
+
+
+/*--------------------------- nav bar--------------------------------------- */
 #navbarSite{
     background-color: white;
     transition: 0.5s;
     z-index: 1500;
 }
-a.nav-link{
-     color: rgb(196, 60, 23);
+/* a.nav-link{
+    color: rgb(196, 60, 23);
     font-weight: 400;
         
-}
+} */
+a.nav-link{
+    color: white;
+    font-size: large;
+    font-weight: 400;
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    cursor: pointer;
+    
+ }
 
 .logo{
     height: 100px;
-    width: 230px;
+    width: 300px;
     z-index: 1000;
+    margin-left: 30px;
+    margin-right: 20px;
 }
 #button-faite_unDon{
-    width: 25%;
+    overflow: hidden;
+    color:white;
+    width: 20%;
+    font-size: 1rem;
+    border-radius: 35px;
+    line-height: 35px;
+    font-weight: 600;
     margin-right: 30px;
+    font-family: "Raleway",Helvetica,Arial,sans-serif;
+    background-color: var(--color-rouge)
+}
+#button-faite_unDon:hover{
+    transform: scale(1.1);
+    background-color: rgb(221, 97, 97);
+    transition: 0.4s;
+    border: none;
+}
+#button-faite_unDon{
+    transition: 0.5s;
 }
 
+/*---------------------------- end NavBar----------------------------- */
+#textCitationAcceuil{
+    padding-top: 10px;
+    background-color: var(--color-rouge)
+}
 
-
-/* acceuil */
+/* -----acceuil  1page-------*/
 #firstRowHomePage{
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     min-height:80vh;
     max-width: 100%;
     background-image: url("images2/DON.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    padding:0px;
+    margin:0px
+    
 }
 .first-text{
     font-size: 1.5rem;
     margin-top: 40px;
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
 }
 .second-text{
     font-size:2rem;
     font-weight: bold;
     text-align: center;
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
 }
 
 
-#textCitationAcceuil{
-    padding-top: 10px;
-    background-color: rgb(190, 16, 16);
-}
 
-/* qui somme nous */
+
+/*------- qui somme nous------- */
 #imgQuiSommeNous{
-    max-width: 200px;
-
+    max-width: 100px;
     
 }
+.titre_quiNousSomme{
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.text_quiNousSomme{
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
 
-/* nos actions */
-#nosActions{
-    background-color: #f5f5f5;
-    padding: 50px;
 }
 
-/* cards  */
 
+/* Nobles choix */
+#noblesChoix{
+    background-color: #f5f5f5;
+    padding: 15px;
+}
+.titre_noblesChoix{
+    font-weight: 700;
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+}
+
+/* -----------cards Noble choix ------------ */
+/* responsive avec media query */
+@media screen and (min-width: 767px){
 .cards-wrapper{
     display: flex;
-
 }
 .card{
     margin: 0.5em;
-    width: calc(100%/3);
+    width: calc(100%/2);
+
 }
 .image-wrapper{
-margin: auto;
+    margin:  auto;
 }
+}
+
+@media screen and (max-width: 767px){
+.cards-wrapper{
+    display: flex;
+    flex-direction: column;
+}   
+.card{
+     margin-top: 20px;
+}   
+}
+.title1_noblesChoixCard,.title2_noblesChoixCard{
+
+    font-weight: 700;
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+}
+.text1_noblesChoix,.text2_noblesChoix{
+
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+}
+
+
+
+
+
+
