@@ -1,7 +1,11 @@
 body{
     margin: 0px;
     padding: 0px;
-    --color-rouge:  rgb(190, 16, 16)  
+    --color-rouge:  rgb(190, 16, 16) ;
+    --color-gris: #f5f5f5;
+    
+    
+
 
 }
 .flux{
@@ -44,7 +48,7 @@ a.nav-link{
     transition: 0.5s;
 }
 .logo:hover{
-    scale: 1.5;
+    scale: 1.1;
     transition: 0.5s ease-in-out;
 }
 #button-faite_unDon{
@@ -133,7 +137,7 @@ a.nav-link{
 
 /*------- Nobles choix---------- */
 #noblesChoix{
-    background-color: #f5f5f5;
+    background-color: var(--color-gris);
     padding: 15px;
 }
 .titre_noblesChoix{
@@ -208,11 +212,11 @@ button, input, optgroup, select, textarea{
 .textarea.form-control {
     min-height: calc(1.5em + 0.75rem + 2px);
 }
-/* --------------------------- START  HOMEPAGE-----------------------------*/
+/* --------------------------- END  HOMEPAGE-----------------------------*/
 /*-------------------------- PAGE - NOS ACTIONS -------------------------- */
 
 #action1, #action3{
-    background-color: #f5f5f5;
+    background-color: var(--color-gris);
 }
 
 #card-title_style{
@@ -241,9 +245,10 @@ button, input, optgroup, select, textarea{
 }
 /*--------------------end of  PAGE - NOS ACTIONS -------------------------- */
 /*---------------------------- PAGE - DON --------------------------------- */
+/* ----- section 1---- */
 
 #coutDeDon{
-    background-color: #f5f5f5;
+    background-color: var(--color-gris);
 }
 
 .iconEuro{
@@ -254,25 +259,75 @@ button, input, optgroup, select, textarea{
     margin-right: 20px;
 }
 .defiscalisation{
-
     display: flex;
     justify-content: space-around;
 }
 .titre_defiscalisation{
     font-size: 1.8rem;
     font-weight: 600;
-    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+.card-defiscalisation{
+margin-bottom: 40px;
+   border-top: 0;
+   border-left: 0;
+   border-right: 0;
+   border-bottom:solid 0.8rem var(--color-rouge);
+   width: 300px;
+}
+
+/* ----end of section 1--- */
+/*----- start section 2 REDUCTION----*/
+.container-reduction{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-reduction_1{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+
+
+/*----- end of section 2 ----*/
+/* ---START OF section 3 --- */
+#impots-section3{
+    background-color:var(--color-gris);
+}
+.title-etapes{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+}
+.etapes-container1{
+    background-color: white;
+    box-sizing: border-box;
+}
+/* -----END OF section 3 --- */
+/* ----START OF section --- 4 */
+
+.container-differance{
+    border-top: var(--color-rouge);
+    border-bottom: var(--color-rouge);
+    color:var(--color-rouge);
+    
+    
+}
+.text-differance{
+    font-family: 'Noto Sans SignWriting', sans-serif;
+   
+}
+/* ----end   OF section --- 4 */
+/*---------------------END OF  PAGE - DON --------------------------------- */
+
+/*----------------------- PAGE - BENEVOLA --------------------------------- */
+
+.text-engrand{
+    font-size: 2rem;
 }
 
 
 
 
 
-/*---------------------END OF  PAGE - DON --------------------------------- */
-
-
-
-
-
-/*----------------------- PAGE - BENEVOLA --------------------------------- */
 /*------------------END OF PAGE - BENEVOLA -------------------------------- */
