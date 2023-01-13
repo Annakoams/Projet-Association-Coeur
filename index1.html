@@ -16,36 +16,32 @@ integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmV
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway:wght@700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
+<!----------------------START OF NAVBAR------------------------>
 <header >
-<nav id="navbarSite" class=" navbar navbar-expand-lg bg-body-tertiary navbar-white bs-body-bg-rgb border-bottom">
+<nav id="navbarSite" class=" navbar navbar-expand-lg bg-body-tertiary navbar-white bs-body-bg-rgb border-bottom shadow">
     <div class="container-fluid ">
 
     <a href="index1.html"><img class="logo " src="images2/logo1.png" ></a> 
 
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                <li class="nav-item">
-                    <a href="index1.html" class="nav-link active mx-0" aria-current="page" > Accueil</a>
-                </li>
-
-                <li class="nav-item">
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 " >
+                <li class="nav-item  nos-actions">
                     <a href="actions.html"  class="nav-link active mx-0" aria-current="page" > Nos Actions</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item  ">
                     <a href="benevola.html" class="nav-link active mx-0" aria-current="page">  Benevola</a>
                 </li>
-                <li class="nav-item">
-                    <a  href="#contact" class="nav-link active" aria-current="page">  Contact</a>
+                <li class="nav-item  ">
+                    <a  href="#contact" class="nav-link active  mx-0" aria-current="page">  Contact</a>
                 </li>
             </ul>
         <button onclick="window.location.href='don.html';"  type="button" class="btn btn-danger btn-faire" id="button-faite_unDon">Faire un Don</button>
@@ -53,38 +49,36 @@ integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmV
         </div>
     </div>
 </nav>
-
-
-
 </header>
+<!----------------------END OF NAVBAR------------------------>
 
 <main class="container-fluid flux ">
-<!-- acceuil -->
+<!------CITATION------->
 <div class="row row-cols-1 mt-10">
 <div class="col-12 text-center " id="textCitationAcceuil">
     <p>« Le bénévolat est un don de soi, un acte d'amour offert à l'humanité. De même que le fleuve retourne à la mer, le don de l'homme revient vers lui. »</p>
 </div>
 </div>
-
-<section class="py-0 pb-0 mb-0" >
-    
+<!-- END OF CITATION -->
+<!---------------------------BIENVENUE------------------------------>
+<section class="py-0 pb-0 mb-0" >    
 <div class="row row-cols-1" id="firstRowHomePage" >
     <div class="d-flex align-items-center flex-column justify-content-start p-0 ">
-        <h3 class="first-text">Bienvenue !</h3>
-        <h1 class="second-text">Suhaitez vous faire un don ou/et vous engager bénévolement dans l’humanitaire ?</h1>
+        <h3 class="first-text title-bienvenue text-center">Bienvenue !</h3>
+        <h1 class="second-text title_suhatezVous text-center">Suhaitez vous faire un don ou...<br>et vous engager bénévolement dans l’humanitaire ?</h1>
         
     </div>
     
 </div>
 </section>
+<!---------------------END OF BIENVENUE----------------------------->
 
-
-<!-- qui somme nous -->
+<!---------------------------QUI SOMME NOUS------------------------->
 <section  class="py-2 px-2 mt-2" id="quiSommeNous">
 <div class="container-fluid d-flex">
-    <div class="row  row-cols-1 row-cols-md-2  align-items-center pt-5 pb-5 ">
-        <div >
-            <img  class="border border-secondary-subtle "  id="imgQuiSommeNous"  src="images2/image les enfants.avif" style="max-width:80%">
+    <div class="row  row-cols-1 row-cols-md-2  pt-5 pb-5  ">
+        <div class="text-center">
+            <img  class="border border-secondary-subtle  "  id="imgQuiSommeNous"  src="images2/image les enfants.avif" >
         </div>
         <div class="border-start border-danger pt-5 pb-5">
             <h2 class="text-center titre_quiNousSomme">Faites un don pour lutter
@@ -94,17 +88,13 @@ integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmV
 
                 Coeur sur la Main, ONG de solidarité d’aide à l’enfance, est présente à l’international dans près de 100 pays. Chaque jour, nous apportons une aide alimentaire d’urgence dans les pays touchés par la crise alimentaire et nous menons des programmes de développement à moyen et long terme pour soutenir les populations vulnérables souffrant de malnutrition.
             </p>
-            <!-- <div class="col text-center mt-5">
-                <a><button type="button" class="btn btn-danger">Je me lance</button></a>
-            </div> -->
         </div>
     </div>
 </div>
-
 </section>
+<!------------------------END OF QUI SOMME NOUS--------------------->
 
-
-<!-- Nos actions -->
+<!-------------------------NOBLE CHOIX CARDS------------------------>
 <section  id="noblesChoix">
 <div class="container-fluid">
         <!--  start nos action  title -->
@@ -113,14 +103,13 @@ integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmV
         </div>
         <!-- end nos action title -->
 
-
+        <!-- CARDS -->
         <div class="row">
-            
                 <div class=" row ">
-                   <div class="cards-wrapper  ">
-                        <!-- first card -->
-                    <div class="card " >
-                        <div class="image-wrapper">
+                   <div class="cards-wrapper container-Noblechoix ">
+                    <!-- first card -->
+                    <div class="card card-noblechoix" >
+                        <div class="image-wrapper image-noblechoix">
                             <img src="images2/images des benevols.webp" class="card-img-top" alt="images des benevoles">
                         </div>
                         <div class="card-body">
@@ -134,16 +123,12 @@ integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmV
                             populations locales, intervenir dans les écoles, sont des actions bénévoles que vous avez la possibilité de
                             réaliser, si votre motivation n’a pas de frontière..</p>
                         <a href="#" class="btn btn-outline-danger btnJeMeLance text-center" >Je Me Lance</a>
-                        
-
-                       
                         </div>
                     </div>
-
                     <!-- end firs card -->
                     <!-- second card -->
-                    <div class="card  " >
-                        <div class="image-wrapper">
+                    <div class="card  card-noblechoix" >
+                        <div class="image-wrapper image-noblechoix">
                             <img src="images2/lutter contre la pauvrete.webp"  class="card-img-top" alt="images des benevoles">
                         </div>
                         <div class="card-body">
@@ -158,11 +143,9 @@ integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmV
                     </div>
                     <!-- end second card -->
                    </div>
-                    
                 </div>
-                
-            
         </div>
+        <!-- END OF CARDS -->
 
             
 
@@ -174,26 +157,8 @@ integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmV
         
 </div>
 </section>
-
-
-<!-- temoiniages -->
-<section >
-
-<div >
-    
-</div>
-</section>
-<!-- benevola -->
-<section >
-
-<div >
-            
-</div>
-</section>
-
-
-
-<!-- Contact -->
+<!-------------------END OF NOBLE CHOIX CARDS----------------------->
+<!--------------------- FORMULAIRE DE Contact----------------------->
 <section class="py-5 text-center" id="contact">
 <div class="container py-5">
     <h2 class="pb-3">Contact</h2>
@@ -230,7 +195,7 @@ integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmV
     </div>
     <div class="row mt-5">
         <div class="col-lg-12">
-            <div class="form-kerri contact_form">
+            <div class="form-coeurSurLaMain contact_form">
                 <form>
                     <div class="row">
                         <div class="col-lg-6">
@@ -261,18 +226,13 @@ integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmV
                             </div>
                         </div>
                     </div>
-
                 </form>
             </div>
-
-
         </div>
     </div>
-        
-
-
 </div>
 </section>
+<!-----------------END OF FORMULAIRE DE Contact--------------------->
 
 
 

@@ -18,8 +18,8 @@ body{
 /*--------------------------- nav bar--------------------------------------- */
 #navbarSite{
     background-color: white;
-    transition: 0.5s;
-    z-index: 1500;
+   
+   
 }
 /* a.nav-link{
     color: rgb(196, 60, 23);
@@ -27,13 +27,13 @@ body{
         
 } */
 a.nav-link{
-    color: white;
+    color:black;
     font-size: large;
-    font-weight: 400;
-    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
     cursor: pointer;
-    
  }
+
 
 .logo{
     height: 100px;
@@ -41,17 +41,22 @@ a.nav-link{
     z-index: 1000;
     margin-left: 30px;
     margin-right: 20px;
+    transition: 0.5s;
+}
+.logo:hover{
+    scale: 1.5;
+    transition: 0.5s ease-in-out;
 }
 #button-faite_unDon{
     overflow: hidden;
     color:white;
-    width: 20%;
-    font-size: 1.2rem;
+    width: 180px;
+    font-size: 1rem;
     border-radius: 35px;
     line-height: 35px;
     font-weight: 600;
-    margin-right: 30px;
-    font-family: "Raleway",Helvetica,Arial,sans-serif;
+    margin-right: 80px;
+    font-family: 'Quicksand', sans-serif;
     background-color: var(--color-rouge)
 }
 #button-faite_unDon:hover{
@@ -63,4 +68,7 @@ a.nav-link{
 #button-faite_unDon{
     transition: 0.5s;
 }
+
+
+    
 /* -----------------------end of nav Bar ------------------------------------*/
