@@ -1,16 +1,13 @@
+
 body{
-    margin: 0px;
-    padding: 0px;
     --color-rouge:  rgb(190, 16, 16) ;
     --color-gris: #f5f5f5;
-    
-    
-
 
 }
-.flux{
- padding: 0;
- margin: 0;
+.flux {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 /* .container-fluid{
     padding: 0px;
@@ -73,56 +70,56 @@ a.nav-link{
     transition: 0.5s;
 }
 /*---------------------------- end of  NAVBAR----------------------------- */
+
 /* --------------------------- START  HOMEPAGE-----------------------------*/
 /* ------CITATION-------- */
 #textCitationAcceuil{
     padding-top: 10px;
-    background-color: var(--color-rouge)
+    background-color: var(--color-rouge);
+    color:var(--color-gris)
 }
 /* ----END OF CITATION-- */
 
 /* ----- HOMEPAGE-------*/
-#firstRowHomePage{
-    min-height:80vh;
-    max-width: 100%;
-    background-image: url("images2/DON.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding:0px;
-    margin:0px
+.section-bienvenue{
+    position: relative;
+    min-width: 100%;
+}
+.text-engrand{
+    font-size: 4rem;
+    text-shadow: 0 0 8px rgb(0 0 0 / 80%);
+    color: var(--color-gris);
+}
+.title-bienvenue{
+    position: absolute;
+    z-index: 1000;
+    margin-top: 100px;
+    margin-left: 100px;
+   color:var(--color-gris)
     
 }
-.first-text{
-    font-size: 1.5rem;
-    margin-top: 60px;
-    margin-bottom: 20px;
-    font-family: 'Quicksand', sans-serif;
-}
-.second-text{
-    font-size:2rem;
-    font-weight: bold;
-    margin-top: 10px;
-    font-family: 'Quicksand', sans-serif;
-}
 @media screen and (max-width: 767px){
-    .first-text{
+    .text-engrand{
         font-size: 1rem;
+        text-align: center;
+        scale: 0.5;
     }
 }
-@media screen and (max-width: 767px){
-    .second-text{
-        font-size: 1.2rem;
-        margin-top:10px;
+@media only screen and (min-width: 768px){
+    .text-engrand{
+        font-size: 60px;
+        text-align: center;
+        scale: 0.5;
     }
 }
 
+
+
 /*------- qui somme nous------- */
 #imgQuiSommeNous{
-    max-width: 70%;
-    margin: auto;
-   
-    
+    min-width: 100%;
+    max-height: 400px;
+    align-items: center;
 }
 .titre_quiNousSomme{
     font-family: "Open Sans",Helvetica,Arial,sans-serif;
@@ -321,10 +318,143 @@ margin-bottom: 40px;
 /*---------------------END OF  PAGE - DON --------------------------------- */
 
 /*----------------------- PAGE - BENEVOLA --------------------------------- */
-
-.text-engrand{
-    font-size: 2rem;
+.section-benevola{
+    position: relative;
 }
+.text-engrand{
+    font-size: 4rem;
+    text-shadow: 0 0 8px rgb(0 0 0 / 80%);
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #f5f5f5;
+    box-sizing: border-box;
+}
+.title-benevola{
+    position: absolute;
+    z-index: 1000;
+    margin-top: 100px;
+    margin-left: 100px;
+    color: #f5f5f5;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 767px){
+    .text-engrand{
+        font-size: 45px;
+        text-align: center;
+        scale: 0.5;
+    }
+}
+.CarouselBenevolats{
+    z-index: -1;
+    margin-top: -50px;
+    max-height:500px;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+/* end of section 1 */
+
+
+/* start of section  2*/
+
+
+.image-container2{
+    width: 40%;
+    margin-right: 0;
+    margin-top: 0;
+    transform: tr;
+}
+
+
+/* end of section 2 */
+.container_section2-benevola{
+    background-color: var(--color-gris);
+}
+.title_ChaqueExperience{
+    margin-top: 50px;
+    font-family: 'Quicksand', sans-serif !important;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.text_ChaqueExperience{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px;
+    padding-top: 20px;
+}
+.image-container2{
+    z-index: 1;
+    width: 550px;
+}
+
+@media only screen and (max-width: 600px){
+    .title_ChaqueExperience{
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+    .text_ChaqueExperience{
+        font-size: 1rem;
+        padding-top:5px
+    }
+    .image-container2{
+        display: none;
+    }
+} 
+
+/* @media only screen and (min-width: 600px){
+    .title_ChaqueExperience{
+        font-size: 1rem;
+    }
+    .text_ChaqueExperience{
+        font-size: 0.5rem
+    }
+    .image-container2{
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+
+}
+
+
+@media only screen and (min-width: 992px)
+
+
+@media only screen and (min-width: 1200px)  */
+
+/* -----card comment devenir benevol ----- */
+.contaner-card{
+    background-color: var(--color-rouge);
+    min-width: 450px;
+    min-height: 220px;
+    
+}
+.card-comment_body{
+    background-color: var(--color-rouge);
+    color: var(--color-gris);
+    margin-left: 130px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.btn-comment{
+    background-color: var(--color-gris);
+    color: var(--color-rouge);
+}
+
+.title_comment{
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+li.ms-0::marker, li::marker{
+    font-weight: bolder;
+}
+
+
+
 
 
 
