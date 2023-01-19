@@ -34,6 +34,11 @@ a.nav-link{
     font-family: 'Quicksand', sans-serif;
     cursor: pointer;
  }
+ a.nav-link:active:hover{
+    
+    color:white;
+    transition:1s;
+ }
 
 
 .logo{
@@ -80,38 +85,50 @@ a.nav-link{
 }
 /* ----END OF CITATION-- */
 
-/* ----- HOMEPAGE-------*/
+/* ----- bienvenue -------*/
 .section-bienvenue{
     position: relative;
-    min-width: 100%;
-}
-.text-engrand{
-    font-size: 4rem;
-    text-shadow: 0 0 8px rgb(0 0 0 / 80%);
-    color: var(--color-gris);
-}
-.title-bienvenue{
-    position: absolute;
-    z-index: 1000;
-    margin-top: 100px;
-    margin-left: 100px;
-   color:var(--color-gris)
-    
-}
-@media screen and (max-width: 767px){
-    .text-engrand{
-        font-size: 1rem;
-        text-align: center;
-        scale: 0.5;
-    }
+    min-width: 80%;
 }
 @media only screen and (min-width: 768px){
-    .text-engrand{
-        font-size: 60px;
-        text-align: center;
-        scale: 0.5;
+    .text-bienvenue_engrand{
+        font-size: 4rem;
+        text-shadow: 0 0 8px rgb(0 0 0 / 80%);
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #f5f5f5;
+        box-sizing: border-box;
+    }
+    .title-bienvenue{
+        position: absolute;
+        z-index: 1;
+        margin-top: 70px;
+        margin-left: 70px;
+       color:var(--color-gris)
+        
+    }
+} 
+
+@media screen and (max-width: 767px){
+    .text-bienvenue_engrand{
+        font-size: 3rem;
+        text-shadow: 0 0 8px rgb(0 0 0 / 80%);
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #f5f5f5;
+        box-sizing: border-box;
+
+    }
+    .title-bienvenue{
+        position: absolute;
+        z-index: 1;
+        margin-top: 30px;
+        margin-left: 10px;
+       color:var(--color-gris)
+        
     }
 }
+
 
 
 
@@ -270,7 +287,7 @@ margin-bottom: 40px;
    border-left: 0;
    border-right: 0;
    border-bottom:solid 0.8rem var(--color-rouge);
-   width: 300px;
+   width: 280px;
 }
 
 /* ----end of section 1--- */
@@ -358,18 +375,13 @@ margin-bottom: 40px;
 /* start of section  2*/
 
 
-.image-container2{
-    width: 40%;
+.imageTerre-container2{
+    width: 100%;
     margin-right: 0;
     margin-top: 0;
-    transform: tr;
+    
 }
 
-
-/* end of section 2 */
-.container_section2-benevola{
-    background-color: var(--color-gris);
-}
 .title_ChaqueExperience{
     margin-top: 50px;
     font-family: 'Quicksand', sans-serif !important;
@@ -435,9 +447,7 @@ margin-bottom: 40px;
 .card-comment_body{
     background-color: var(--color-rouge);
     color: var(--color-gris);
-    margin-left: 130px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin:30px;
     
 }
 .btn-comment{
