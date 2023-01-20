@@ -36,7 +36,7 @@ header{
 } */
 a.nav-link{
     color:black;
-    font-size: large;
+    font-size: medium;
     font-weight: 500;
     font-family: 'Quicksand', sans-serif;
     cursor: pointer;
@@ -46,18 +46,16 @@ a.nav-link{
  li.nav-item{
     transition:0.5s all ease-in;
     color: transparent;
-    margin: 5px;
+    margin: 1px;
  }
  li.nav-item:hover{
     scale: 1.1;
  }
 
-
 .logo{
     height: 100px;
     width: 300px;
     z-index: 1000;
-    margin-left: 30px;
     margin-right: 20px;
     transition: 0.5s;
 }
@@ -133,7 +131,7 @@ a.nav-link{
 
 @media screen and (max-width: 767px){
     .text-bienvenue_engrand{
-        font-size: 3rem;
+        font-size: 2rem;
         text-shadow: 0 0 8px rgb(0 0 0 / 80%);
         font-weight: 700;
         letter-spacing: 1px;
@@ -155,10 +153,12 @@ a.nav-link{
 
 
 /*------- qui somme nous------- */
-#imgQuiSommeNous{
-    min-width: 100%;
+.imgQuiSommeNous{
+    max-width: 100%;
     max-height: 400px;
     align-items: center;
+    margin: auto;
+    
 }
 .titre_quiNousSomme{
     font-family: "Open Sans",Helvetica,Arial,sans-serif;
@@ -169,8 +169,12 @@ a.nav-link{
     font-family: "Open Sans",Helvetica,Arial,sans-serif;
 
 }
-
-
+@media only screen and (min-width: 768px){
+    .container-text_quiNousSomme{
+        border: none;
+        
+}
+}
 /*------- Nobles choix---------- */
 #noblesChoix{
     background-color: var(--color-gris);
