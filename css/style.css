@@ -2,6 +2,7 @@
 body{
     --color-rouge:  rgb(190, 16, 16) ;
     --color-gris: #f5f5f5;
+    padding-top:115px;
 
 }
 .flux {
@@ -98,7 +99,7 @@ a.nav-link{
 
 /* --------------------------- START  HOMEPAGE-----------------------------*/
 /* ------CITATION-------- */
-#textCitationAcceuil{
+.text_CitationAcceuil{
     padding-top: 10px;
     background-color: var(--color-rouge);
     color:var(--color-gris)
@@ -169,9 +170,9 @@ a.nav-link{
     font-family: "Open Sans",Helvetica,Arial,sans-serif;
 
 }
-@media only screen and (min-width: 768px){
+@media only screen and (max-width: 768px){
     .container-text_quiNousSomme{
-        border: none;
+        border: none !important;
         
 }
 }
@@ -253,20 +254,75 @@ button, input, optgroup, select, textarea{
     min-height: calc(1.5em + 0.75rem + 2px);
 }
 /* --------------------------- END  HOMEPAGE-----------------------------*/
+
+/*-------------------------- PAGE - EVENEMENTS -------------------------- */
+.container_datesEvents{
+    width: 100%;
+    background-color:#96a5b4;
+}
+.text_datesEvents{
+    display: block;
+    font-size: 32px;
+    font-weight: 900;
+    color: #e8ecf0;
+    line-height: 1;
+}
+.title_events-card{
+    color:rgb(132, 59, 59);
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+
+}
+.events_local{
+    font-style: italic;
+    color:rgb(132, 59, 59);
+    font-weight:lighter;
+    font-family: "Lato", sans-serif;
+}
+.text_events{
+    font-family: "Lato", sans-serif;
+}
+.bouton_events{
+    position: absolute;
+    border-radius:  0 8px 0 0;
+    bottom: 0;
+    right: 0;
+    background:var(--color-rouge);
+    border: 1px solid var(--color-rouge);
+    border-radius: 12px 0  0  0 ;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.5725;
+    padding: 5px 20px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    vertical-align: middle;
+}
+
+
+
+
+/*--------------------------END OF  PAGE - EVENEMENTS  -------------------------- */
+
+
+
+
+
+
 /*-------------------------- PAGE - NOS ACTIONS -------------------------- */
 
-#action1, #action3{
+.action1, .action3{
     background-color: var(--color-gris);
 }
 
-#card-title_style{
-
+.card-title_style{
     font-size: 1.3rem;
     font-weight: 600;
-    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-family:"Lato", sans-serif;
 }
-#card-text_style{
-    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+.card-text_style{
+    font-family: 'Lato', sans-serif;
 }
 .textEnGras{
     font-size: 1.1rem;
@@ -276,7 +332,7 @@ button, input, optgroup, select, textarea{
 .btnJeMeLance{
     border-radius: 20px;
 }
-#image_action{
+.image_action{
     position: flex;
     justify-content: center;
     align-items: center;
@@ -287,7 +343,7 @@ button, input, optgroup, select, textarea{
 /*---------------------------- PAGE - DON --------------------------------- */
 /* ----- section 1---- */
 
-#coutDeDon{
+.coutDeDon{
     background-color: var(--color-gris);
 }
 
