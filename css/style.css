@@ -17,6 +17,13 @@ body{
 
 
 /*--------------------------- nav bar--------------------------------------- */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+}
 #navbarSite{
     background-color: white;
    
@@ -33,11 +40,16 @@ a.nav-link{
     font-weight: 500;
     font-family: 'Quicksand', sans-serif;
     cursor: pointer;
- }
- a.nav-link:active:hover{
     
-    color:white;
-    transition:1s;
+ }
+
+ li.nav-item{
+    transition:0.5s all ease-in;
+    color: transparent;
+    margin: 5px;
+ }
+ li.nav-item:hover{
+    scale: 1.1;
  }
 
 
@@ -48,6 +60,16 @@ a.nav-link{
     margin-left: 30px;
     margin-right: 20px;
     transition: 0.5s;
+}
+@media screen and (max-width: 767px){
+    .logo{
+    height: 50px;
+    width: 150px;
+    z-index: 1000;
+    margin-left: 15px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
 }
 .logo:hover{
     scale: 1.1;
@@ -414,28 +436,6 @@ margin-bottom: 40px;
     }
 } 
 
-/* @media only screen and (min-width: 600px){
-    .title_ChaqueExperience{
-        font-size: 1rem;
-    }
-    .text_ChaqueExperience{
-        font-size: 0.5rem
-    }
-    .image-container2{
-        display: none;
-    }
-}
-
-
-@media only screen and (min-width: 768px) {
-
-}
-
-
-@media only screen and (min-width: 992px)
-
-
-@media only screen and (min-width: 1200px)  */
 
 /* -----card comment devenir benevol ----- */
 .contaner-card{
