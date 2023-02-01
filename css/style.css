@@ -1,15 +1,16 @@
-
-body{
-    --color-rouge:  rgb(190, 16, 16) ;
+body {
+    --color-rouge: rgb(190, 16, 16);
     --color-gris: #f5f5f5;
-    padding-top:115px;
+    padding-top: 115px;
 
 }
+
 .flux {
     width: 100%;
     margin: 0;
     padding: 0;
 }
+
 /* .container-fluid{
     padding: 0px;
 } */
@@ -17,69 +18,76 @@ body{
 /* fontes */
 
 
-/*--------------------------- nav bar--------------------------------------- */
-header{
+/*-------------- nav bar---------------- */
+header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     z-index: 1000;
 }
-#navbarSite{
+
+#navbarSite {
     background-color: white;
-   
-   
+
+
 }
+
 /* a.nav-link{
     color: rgb(196, 60, 23);
     font-weight: 400;
         
 } */
-a.nav-link{
-    color:black;
+a.nav-link {
+    color: black;
     font-size: medium;
     font-weight: 500;
     font-family: 'Quicksand', sans-serif;
     cursor: pointer;
-    
- }
 
- li.nav-item{
-    transition:0.5s all ease-in;
+}
+
+li.nav-item {
+    transition: 0.5s all ease-in;
     color: transparent;
     margin: 1px;
- }
- li.nav-item:hover{
-    scale: 1.1;
- }
+}
 
-.logo{
+li.nav-item:hover {
+    scale: 1.1;
+}
+
+.logo {
     height: 100px;
     width: 300px;
     z-index: 1000;
     margin-right: 20px;
     transition: 0.5s;
 }
-@media screen and (max-width: 767px){
-    .logo{
-    height: 50px;
-    width: 150px;
-    z-index: 1000;
-    margin-left: 15px;
-    margin-right: 10px;
-    transition: 0.5s;
-}
-    body{
+
+@media screen and (max-width: 767px) {
+    .logo {
+        height: 50px;
+        width: 150px;
+        z-index: 1000;
+        margin-left: 15px;
+        margin-right: 10px;
+        transition: 0.5s;
+    }
+
+    body {
         padding-top: 67px;
     }
 }
-.logo:hover{
+
+.logo:hover {
     scale: 1.1;
     transition: 0.5s ease-in-out;
 }
-#button-faite_unDon{
+
+#button-faite_unDon {
     overflow: hidden;
-    color:white;
+    color: white;
     width: 180px;
     font-size: 1rem;
     border-radius: 35px;
@@ -89,32 +97,36 @@ a.nav-link{
     font-family: 'Quicksand', sans-serif;
     background-color: var(--color-rouge)
 }
-#button-faite_unDon:hover{
+
+#button-faite_unDon:hover {
     transform: scale(1.1);
     background-color: rgb(221, 97, 97);
     transition: 0.4s;
     border: none;
 }
-#button-faite_unDon{
+
+#button-faite_unDon {
     transition: 0.5s;
 }
-/*---------------------------- end of  NAVBAR----------------------------- */
 
-/* --------------------------- START  HOMEPAGE-----------------------------*/
+/*----------- end of  NAVBAR----------- */
+
+/*---------- START  HOMEPAGE------------*/
 /* ------CITATION-------- */
-@media screen and (min-width: 767px){
-    .text_CitationAcceuil{
+@media screen and (min-width: 767px) {
+    .text_CitationAcceuil {
         padding-top: 10px;
         background-color: var(--color-rouge);
-        color:var(--color-gris);
-       
+        color: var(--color-gris);
+
     }
 }
-@media screen and (max-width: 767px){
-    .text_CitationAcceuil{
+
+@media screen and (max-width: 767px) {
+    .text_CitationAcceuil {
         padding-top: 10px;
         background-color: var(--color-rouge);
-        color:var(--color-gris);
+        color: var(--color-gris);
         font-size: 0.7rem;
     }
 }
@@ -122,12 +134,13 @@ a.nav-link{
 /* ----END OF CITATION-- */
 
 /* ----- bienvenue -------*/
-.section_bienvenue{
+.section_bienvenue {
     position: relative;
     min-width: 80%;
 }
-@media only screen and (min-width: 768px){
-    .text-bienvenue_engrand{
+
+@media only screen and (min-width: 768px) {
+    .text-bienvenue_engrand {
         font-size: 4rem;
         text-shadow: 0 0 8px rgb(0 0 0 / 80%);
         font-weight: 700;
@@ -135,18 +148,19 @@ a.nav-link{
         color: #f5f5f5;
         box-sizing: border-box;
     }
-    .title-bienvenue{
+
+    .title-bienvenue {
         position: absolute;
         z-index: 1;
-        margin-top: 70px;
-        margin-left: 70px;
-       color:var(--color-gris)
-        
-    }
-} 
+        bottom: 0;
 
-@media screen and (max-width: 767px){
-    .text-bienvenue_engrand{
+        padding: 70px;
+        color: var(--color-gris)
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .text-bienvenue_engrand {
         font-size: 2rem;
         text-shadow: 0 0 8px rgb(0 0 0 / 80%);
         font-weight: 700;
@@ -155,13 +169,35 @@ a.nav-link{
         box-sizing: border-box;
 
     }
-    .title-bienvenue{
+
+    .title-bienvenue {
         position: absolute;
+        font-size: 1.5rem;
         z-index: 1;
-        margin-top: 30px;
-        margin-left: 10px;
-       color:var(--color-gris)
-        
+        bottom: 0;
+        padding: 40px;
+        color: var(--color-gris)
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .text-bienvenue_engrand {
+        font-size: 1.5rem;
+        text-shadow: 0 0 8px rgb(0 0 0 / 80%);
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #f5f5f5;
+        box-sizing: border-box;
+
+    }
+
+    .title-bienvenue {
+        position: absolute;
+        font-size: 1rem;
+        z-index: 1;
+        bottom: 0;
+        padding: 20px;
+        color: var(--color-gris)
     }
 }
 
@@ -169,111 +205,128 @@ a.nav-link{
 
 
 /*------- qui somme nous------- */
-.imgQuiSommeNous{
+.imgQuiSommeNous {
     max-width: 100%;
     max-height: 400px;
     align-items: center;
     margin: auto;
-    
+
 }
-.titre_quiNousSomme{
-    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+
+.titre_quiNousSomme {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     margin-bottom: 20px;
     font-weight: 500;
 }
-.text_quiNousSomme{
-    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+
+.text_quiNousSomme {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
 
 }
-@media only screen and (max-width: 768px){
-    .container-text_quiNousSomme{
+
+@media only screen and (max-width: 768px) {
+    .container-text_quiNousSomme {
         border: none !important;
-        
+
+    }
 }
-}
+
 /*------- Nobles choix---------- */
-#noblesChoix{
+.noblesChoix {
     background-color: var(--color-gris);
     padding: 15px;
 }
-.titre_noblesChoix{
+
+.titre_noblesChoix {
     font-weight: 700;
-    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 /* ---cards Noble choix -- */
 
 /* responsive avec media query */
-@media screen and (min-width: 767px){
-.container-Noblechoix{
-    display: flex;
-}
-.card-noblechoix{
-    margin: 0.5em;
-    width: calc(100%/2);
+@media screen and (min-width: 767px) {
+    .container-Noblechoix {
+        display: flex;
+    }
 
-}
-.image-noblechoix{
-    margin:  auto;
-}
+    .card-noblechoix {
+        margin: 0.5em;
+        width: calc(100%/2);
+
+    }
+
+    .image-noblechoix {
+        margin: auto;
+    }
 }
 
-@media screen and (max-width: 767px){
-.container-Noblechoix{
-    display: flex;
-    flex-direction: column;
-}   
-.card-noblechoix{
-     margin-top: 20px;
-}   
-}
-.title1_noblesChoixCard,.title2_noblesChoixCard{
+@media screen and (max-width: 767px) {
+    .container-Noblechoix {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .card-noblechoix {
+        margin-top: 20px;
+    }
+}
+
+.title1_noblesChoixCard,
+.title2_noblesChoixCard {
+    
     font-weight: 700;
-    font-family: "Open Sans",Helvetica,Arial,sans-serif;
-}
-.text1_noblesChoix,.text2_noblesChoix{
-
-    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
-/* --------------------------- END  HOMEPAGE-----------------------------*/
+.text1_noblesChoix,
+.text2_noblesChoix {
 
-/*-------------------------- PAGE - EVENEMENTS -------------------------- */
-.container_datesEvents{
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+/* ---------- END  HOMEPAGE------------*/
+
+/*--------- PAGE - EVENEMENTS -------- */
+.container_datesEvents {
     width: 100%;
-    background-color:#96a5b4;
+    background-color: #96a5b4;
 }
-.text_datesEvents{
+
+.text_datesEvents {
     display: block;
     font-size: 32px;
     font-weight: 900;
     color: #e8ecf0;
     line-height: 1;
 }
-.title_events-card{
-    color:rgb(132, 59, 59);
+
+.title_events-card {
+    color: rgb(132, 59, 59);
     font-weight: bold;
     font-family: "Lato", sans-serif;
 
 }
-.events_local{
+
+.events_local {
     font-style: italic;
-    color:rgb(132, 59, 59);
-    font-weight:lighter;
+    color: rgb(132, 59, 59);
+    font-weight: lighter;
     font-family: "Lato", sans-serif;
 }
-.text_events{
+
+.text_events {
     font-family: "Lato", sans-serif;
 }
-.bouton_events{
+
+.bouton_events {
     position: absolute;
-    border-radius:  0 8px 0 0;
+    border-radius: 0 8px 0 0;
     bottom: 0;
     right: 0;
-    background:var(--color-rouge);
+    background: var(--color-rouge);
     border: 1px solid var(--color-rouge);
-    border-radius: 12px 0  0  0 ;
+    border-radius: 12px 0 0 0;
     color: #fff;
     display: inline-block;
     font-size: 14px;
@@ -284,76 +337,84 @@ a.nav-link{
     vertical-align: middle;
 }
 
-/*-------------------------- PAGE - NOS ACTIONS -------------------------- */
+/*--------- PAGE - NOS ACTIONS -------- */
 
-.action1, .action3{
+.action1,
+.action3 {
     background-color: var(--color-gris);
 }
 
-.card-title_style{
+.card-title_style {
     font-size: 1.3rem;
     font-weight: 600;
-    font-family:"Lato", sans-serif;
+    font-family: "Lato", sans-serif;
 }
-.card-text_style{
+
+.card-text_style {
     font-family: 'Lato', sans-serif;
 }
-.textEnGras{
+
+.textEnGras {
     font-size: 1.1rem;
     font-weight: 800;
 }
 
-.btnJeMeLance{
+.btnJeMeLance {
     border-radius: 20px;
 }
-.image_action{
+
+.image_action {
     position: flex;
     justify-content: center;
     align-items: center;
-    width: 350px;
+    width: 100%;
     height: 200px;
+    object-fit: cover;
 }
 
-/*---------------------------- PAGE - DON --------------------------------- */
+/*------------ PAGE - DON ------------- */
 /* ----- section 1---- */
 
-.coutDeDon{
+.coutDeDon {
     background-color: var(--color-gris);
 }
 
-.iconEuro{
+.iconEuro {
     position: absolute;
     transform: translateY(-50px);
     width: 50px;
     height: 50px;
     margin-right: 20px;
 }
-.defiscalisation{
+
+.defiscalisation {
     display: flex;
     justify-content: space-around;
 }
-.titre_defiscalisation{
+
+.titre_defiscalisation {
     font-size: 1.8rem;
     font-weight: 600;
     font-family: 'Quicksand', sans-serif;
 }
-.card-defiscalisation{
-margin-bottom: 40px;
-   border-top: 0;
-   border-left: 0;
-   border-right: 0;
-   border-bottom:solid 0.8rem var(--color-rouge);
-   width: 280px;
+
+.card-defiscalisation {
+    margin-bottom: 40px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: solid 0.8rem var(--color-rouge);
+    width: 280px;
 }
 
 /* ----end of section 1--- */
 /*----- start section 2 REDUCTION----*/
-.container-reduction{
+.container-reduction {
     display: flex;
     justify-content: space-between;
 }
 
-.title-reduction_1{
+.title-reduction_1 {
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
 }
@@ -361,45 +422,51 @@ margin-bottom: 40px;
 
 /*----- end of section 2 ----*/
 /* ---START OF section 3 --- */
-#impots-section3{
-    background-color:var(--color-gris);
+#impots-section3 {
+    background-color: var(--color-gris);
 }
-.title-etapes{
+
+.title-etapes {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     font-size: x-large;
 }
-.etapes-container1{
+
+.etapes-container1 {
     background-color: white;
     box-sizing: border-box;
 }
+
 /* -----END OF section 3 --- */
-/* ----START OF section --- 4 */
+/* ----START OF section 4 --- */
 
 
-.container_differance{
+.container_differance {
     border-top: var(--color-rouge);
     border-bottom: var(--color-rouge);
-    color:grey;
-    
-    
+    color: grey;
+
+
 }
-.text_differance{
+
+.text_differance {
     font-family: 'Noto Sans SignWriting', sans-serif;
     font-weight: 1000;
     font-size: 2.8em;
-    box-shadow:inset;
+    box-shadow: inset;
     border: black;
-   
-}
-/*---------------------end of PAGE - DON --------------------------------- */
 
-/*----------------------- PAGE - BENEVOLA --------------------------------- */
-.section_benevola{
+}
+
+/*---------- end of PAGE - DON --------- */
+
+/*--------- PAGE - BENEVOLA ------------ */
+.section_benevola {
     position: relative;
 }
-@media only screen and (min-width: 768px){
-    .text-engrand{
+
+@media only screen and (min-width: 768px) {
+    .text-engrand {
         font-size: 4rem;
         text-shadow: 0 0 8px rgb(0 0 0 / 80%);
         font-weight: 700;
@@ -407,20 +474,23 @@ margin-bottom: 40px;
         color: #f5f5f5;
         box-sizing: border-box;
     }
-    .title-benevola{
+
+    .title-benevola {
         position: absolute;
         z-index: 1;
         margin-top: 70px;
         margin-left: 70px;
-       color:var(--color-gris)
+        color: var(--color-gris)
     }
-    .title_ChaqueExperience{
+
+    .title_ChaqueExperience {
         margin-top: 50px;
         font-family: 'Quicksand', sans-serif;
         font-size: 3rem;
         font-weight: bolder;
     }
-    .text_ChaqueExperience{
+
+    .text_ChaqueExperience {
         font-family: 'Quicksand', sans-serif;
         font-size: 1.5rem;
         font-weight: bold;
@@ -429,8 +499,8 @@ margin-bottom: 40px;
     }
 }
 
-@media screen and (max-width: 767px){
-    .text-engrand{
+@media screen and (max-width: 767px) {
+    .text-engrand {
         font-size: 2rem;
         text-shadow: 0 0 8px rgb(0 0 0 / 80%);
         font-weight: 700;
@@ -438,20 +508,23 @@ margin-bottom: 40px;
         color: #f5f5f5;
         box-sizing: border-box;
     }
-    .title-benevola{
+
+    .title-benevola {
         position: absolute;
         z-index: 1;
         margin-top: 60px;
         margin-left: 10px;
-        color:var(--color-gris)
+        color: var(--color-gris)
     }
-    .title_ChaqueExperience{
+
+    .title_ChaqueExperience {
         margin-top: 10px;
         font-family: 'Quicksand', sans-serif;
         font-size: 2rem;
         font-weight: bolder;
     }
-    .text_ChaqueExperience{
+
+    .text_ChaqueExperience {
         font-family: 'Quicksand', sans-serif;
         font-size: 1rem;
         font-weight: bold;
@@ -461,94 +534,99 @@ margin-bottom: 40px;
 
 }
 
-.CarouselBenevolats{
+.CarouselBenevolats {
     z-index: -1;
     margin-top: -50px;
-    max-height:500px;
+    max-height: 500px;
     width: 100%;
     height: 100%;
-   
+
 }
+
 /* end of section 1 */
 
 
 /* start of section  2*/
 
 
-.imageTerre-container2{
+.imageTerre-container2 {
     width: 100%;
     margin-right: 0;
     margin-top: 50px;
-    
+
 }
+
 /* -----card comment devenir benevol ----- */
-.contaner-card{
+.contaner-card {
     background-color: var(--color-rouge);
     min-width: 100vw;
     min-height: 220px;
-    
-}
-.card-comment_body{
-    background-color: var(--color-rouge);
-    color: var(--color-gris);
-    margin:30px;
-    
+
 }
 
-@media screen and (max-width: 767px){
-    .card-comment_body{
+.card-comment_body {
+    background-color: var(--color-rouge);
+    color: var(--color-gris);
+    margin: 30px;
+
+}
+
+@media screen and (max-width: 767px) {
+    .card-comment_body {
         background-color: var(--color-rouge);
         color: var(--color-gris);
-        margin:30px;
+        margin: 30px;
         width: 80vw;
-        
-        
+
+
     }
 }
-.btn-comment{
+
+.btn-comment {
     background-color: var(--color-gris);
     color: var(--color-rouge);
 }
 
-.title_comment{
+.title_comment {
     font-weight: bolder;
     font-size: 1.5rem;
 }
-li.ms-0::marker, li::marker{
+
+li.ms-0::marker,
+li::marker {
     font-weight: bolder;
 }
 
-/*------------------END OF PAGE - BENEVOLA -------------------------------- */
-/*------------------start OF PAGE - CONTACT -------------------------------- */
+/*---------- END OF PAGE - BENEVOLA ---------- */
+/*--------- start OF PAGE - CONTACT ---------- */
 
-
-
-/* ---------formulaire DE CONTACT--------*/
-.section-form{
+.section-form {
     background-image: url("/images_contact/terre.png");
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     object-fit: cover;
-  
-    
+
+
 
 }
-.container_form{
+
+.container_form {
     background-color: rgba(255, 255, 255, 0.43);
     width: 50vw;
-   
+
 }
-@media screen and (max-width: 767px){
-    .container_form{
+
+@media screen and (max-width: 767px) {
+    .container_form {
         width: 80vw;
     }
-   
+
 }
-.form-coeurSurLaMain .form-control{
-    color:rgb(49, 47, 47);
-    background-color:black;
+.form-coeurSurLaMain .form-control {
+    color: rgb(49, 47, 47);
+    background-color: black;
     box-shadow: none !important;
     height: 50px;
     margin-bottom: 14px;
@@ -556,7 +634,8 @@ li.ms-0::marker, li::marker{
 
 
 }
-.form-control{
+
+.form-control {
     color: rgb(141, 138, 138);
     height: 20px;
     padding: 0.375rem 0.75rem;
@@ -567,14 +646,22 @@ li.ms-0::marker, li::marker{
     border-radius: 0.25rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
-button, input, optgroup, select, textarea{
+
+button,
+input,
+optgroup,
+select,
+textarea {
     margin: 0;
     font-family: inherit;
 }
-.form-coeurSurLaMain textarea.form-control{
+
+.form-coeurSurLaMain textarea.form-control {
     height: auto;
 }
+
 .textarea.form-control {
     min-height: calc(1.5em + 0.75rem + 2px);
 }
-/*------------------END OF PAGE - BENEVOLA -------------------------------- */
+
+/*-------END OF PAGE - CONTACT --------- */
