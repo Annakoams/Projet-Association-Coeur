@@ -11,13 +11,6 @@ body {
     padding: 0;
 }
 
-/* .container-fluid{
-    padding: 0px;
-} */
-
-/* fontes */
-
-
 /*-------------- nav bar---------------- */
 header {
     position: fixed;
@@ -25,26 +18,7 @@ header {
     left: 0;
     width: 100vw;
     z-index: 1000;
-}
-
-#navbarSite {
     background-color: white;
-
-
-}
-
-/* a.nav-link{
-    color: rgb(196, 60, 23);
-    font-weight: 400;
-        
-} */
-a.nav-link {
-    color: black;
-    font-size: medium;
-    font-weight: 500;
-    font-family: 'Quicksand', sans-serif;
-    cursor: pointer;
-
 }
 
 li.nav-item {
@@ -149,7 +123,7 @@ li.nav-item:hover {
         box-sizing: border-box;
     }
 
-    .title-bienvenue {
+    .title_bienvenue {
         position: absolute;
         z-index: 1;
         bottom: 0;
@@ -170,7 +144,7 @@ li.nav-item:hover {
 
     }
 
-    .title-bienvenue {
+    .title_bienvenue {
         position: absolute;
         font-size: 1.5rem;
         z-index: 1;
@@ -191,7 +165,7 @@ li.nav-item:hover {
 
     }
 
-    .title-bienvenue {
+    .title_bienvenue {
         position: absolute;
         font-size: 1rem;
         z-index: 1;
@@ -227,7 +201,6 @@ li.nav-item:hover {
 @media only screen and (max-width: 768px) {
     .container-text_quiNousSomme {
         border: none !important;
-
     }
 }
 
@@ -237,7 +210,7 @@ li.nav-item:hover {
     padding: 15px;
 }
 
-.titre_noblesChoix {
+.titre_Choix {
     font-weight: 700;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
@@ -246,11 +219,11 @@ li.nav-item:hover {
 
 /* responsive avec media query */
 @media screen and (min-width: 767px) {
-    .container-Noblechoix {
+    .container_Noblechoix {
         display: flex;
     }
 
-    .card-noblechoix {
+    .card_noblechoix {
         margin: 0.5em;
         width: calc(100%/2);
 
@@ -262,19 +235,19 @@ li.nav-item:hover {
 }
 
 @media screen and (max-width: 767px) {
-    .container-Noblechoix {
+    .container_Noblechoix {
         display: flex;
         flex-direction: column;
     }
 
-    .card-noblechoix {
+    .card_noblechoix {
         margin-top: 20px;
     }
 }
 
 .title1_noblesChoixCard,
 .title2_noblesChoixCard {
-    
+
     font-weight: 700;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
@@ -344,15 +317,12 @@ li.nav-item:hover {
     background-color: var(--color-gris);
 }
 
-.card-title_style {
+.title_cardAction {
     font-size: 1.3rem;
     font-weight: 600;
     font-family: "Lato", sans-serif;
 }
 
-.card-text_style {
-    font-family: 'Lato', sans-serif;
-}
 
 .textEnGras {
     font-size: 1.1rem;
@@ -398,7 +368,7 @@ li.nav-item:hover {
     font-family: 'Quicksand', sans-serif;
 }
 
-.card-defiscalisation {
+.card_defiscalisation {
     margin-bottom: 40px;
     border-top: 0;
     border-left: 0;
@@ -409,53 +379,71 @@ li.nav-item:hover {
 
 /* ----end of section 1--- */
 /*----- start section 2 REDUCTION----*/
-.container-reduction {
+.container_reduction {
     display: flex;
     justify-content: space-between;
 }
 
-.title-reduction_1 {
+.title_reduction1,
+.title_reduction2,
+.text_reduction {
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
 }
 
 
+
 /*----- end of section 2 ----*/
-/* ---START OF section 3 --- */
-#impots-section3 {
+/* ---start section 3 --- */
+.container_impots {
     background-color: var(--color-gris);
 }
 
-.title-etapes {
+.cards_impots {
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.title_impotsCards {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     font-size: x-large;
 }
 
-.etapes-container1 {
-    background-color: white;
-    box-sizing: border-box;
+.text_etapes {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
 }
+
+
 
 /* -----END OF section 3 --- */
 /* ----START OF section 4 --- */
 
 
 .container_differance {
-    border-top: var(--color-rouge);
-    border-bottom: var(--color-rouge);
     color: grey;
-
-
 }
 
 .text_differance {
     font-family: 'Noto Sans SignWriting', sans-serif;
     font-weight: 1000;
-    font-size: 2.8em;
+    font-size: 1rem;
     box-shadow: inset;
     border: black;
+    opacity: 0.5;
 
+}
+
+@media screen and (min-width: 767px) {
+    .text_differance {
+        font-family: 'Noto Sans SignWriting', sans-serif;
+        font-weight: 1000;
+        font-size: 2.5rem;
+        box-shadow: inset;
+        border: black;
+
+    }
 }
 
 /*---------- end of PAGE - DON --------- */
@@ -466,7 +454,7 @@ li.nav-item:hover {
 }
 
 @media only screen and (min-width: 768px) {
-    .text-engrand {
+    .text_engrand {
         font-size: 4rem;
         text-shadow: 0 0 8px rgb(0 0 0 / 80%);
         font-weight: 700;
@@ -475,7 +463,7 @@ li.nav-item:hover {
         box-sizing: border-box;
     }
 
-    .title-benevola {
+    .title_benevola {
         position: absolute;
         z-index: 1;
         margin-top: 70px;
@@ -500,7 +488,7 @@ li.nav-item:hover {
 }
 
 @media screen and (max-width: 767px) {
-    .text-engrand {
+    .text_engrand {
         font-size: 2rem;
         text-shadow: 0 0 8px rgb(0 0 0 / 80%);
         font-weight: 700;
@@ -509,8 +497,9 @@ li.nav-item:hover {
         box-sizing: border-box;
     }
 
-    .title-benevola {
+    .title_benevola {
         position: absolute;
+        font-size: 0.5rem;
         z-index: 1;
         margin-top: 60px;
         margin-left: 10px;
@@ -549,7 +538,7 @@ li.nav-item:hover {
 /* start of section  2*/
 
 
-.imageTerre-container2 {
+.imageTerre {
     width: 100%;
     margin-right: 0;
     margin-top: 50px;
@@ -557,39 +546,28 @@ li.nav-item:hover {
 }
 
 /* -----card comment devenir benevol ----- */
-.contaner-card {
+.contaner_card {
     background-color: var(--color-rouge);
     min-width: 100vw;
     min-height: 220px;
 
 }
 
-.card-comment_body {
+.card_comment {
     background-color: var(--color-rouge);
     color: var(--color-gris);
     margin: 30px;
-
-}
-
-@media screen and (max-width: 767px) {
-    .card-comment_body {
-        background-color: var(--color-rouge);
-        color: var(--color-gris);
-        margin: 30px;
-        width: 80vw;
-
-
-    }
-}
-
-.btn-comment {
-    background-color: var(--color-gris);
-    color: var(--color-rouge);
 }
 
 .title_comment {
     font-weight: bolder;
     font-size: 1.5rem;
+}
+
+
+.btn_comment {
+    background-color: var(--color-gris);
+    color: var(--color-rouge);
 }
 
 li.ms-0::marker,
@@ -600,16 +578,13 @@ li::marker {
 /*---------- END OF PAGE - BENEVOLA ---------- */
 /*--------- start OF PAGE - CONTACT ---------- */
 
-.section-form {
+.section_form {
     background-image: url("/images_contact/terre.png");
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     object-fit: cover;
-
-
-
 }
 
 .container_form {
@@ -624,7 +599,8 @@ li::marker {
     }
 
 }
-.form-coeurSurLaMain .form-control {
+
+.form_coeurSurLaMain .form-control {
     color: rgb(49, 47, 47);
     background-color: black;
     box-shadow: none !important;
@@ -656,7 +632,7 @@ textarea {
     font-family: inherit;
 }
 
-.form-coeurSurLaMain textarea.form-control {
+.form_coeurSurLaMain textarea.form-control {
     height: auto;
 }
 
