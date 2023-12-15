@@ -221,6 +221,7 @@ li.nav-item:hover {
 @media screen and (min-width: 767px) {
     .container_Noblechoix {
         display: flex;
+        justify-content: space-between;
     }
 
     .card_noblechoix {
@@ -584,7 +585,7 @@ li::marker {
     height: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    object-fit: cover;
+    background-size: cover;
 }
 
 .container_form {
