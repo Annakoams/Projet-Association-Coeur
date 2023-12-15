@@ -101,7 +101,7 @@ li.nav-item:hover {
         padding-top: 10px;
         background-color: var(--color-rouge);
         color: var(--color-gris);
-        font-size: 0.7rem;
+        font-size: 0.5rem;
     }
 }
 
@@ -115,7 +115,7 @@ li.nav-item:hover {
 
 @media only screen and (min-width: 768px) {
     .text-bienvenue_engrand {
-        font-size: 4rem;
+        font-size: 7rem;
         text-shadow: 0 0 8px rgb(0 0 0 / 80%);
         font-weight: 700;
         letter-spacing: 1px;
@@ -127,7 +127,7 @@ li.nav-item:hover {
         position: absolute;
         z-index: 1;
         bottom: 0;
-
+        font-size: 3rem;
         padding: 70px;
         color: var(--color-gris)
     }
@@ -421,7 +421,9 @@ li.nav-item:hover {
 /* -----END OF section 3 --- */
 /* ----START OF section 4 --- */
 
-
+.defiscalisation{
+    margin: auto;
+}
 .container_differance {
     color: grey;
 }
